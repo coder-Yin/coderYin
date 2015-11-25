@@ -12,6 +12,7 @@
 .r-name{font-size: 28px;color: #333;margin-bottom: 8px;}
 .r-intention{font-size: 16px;color: #333;margin-bottom: 8px;}
 .r-school{margin-bottom: 8px;}
+.r-git{margin-top: 8px;}
 
 .module{margin-top: 45px;}
 .title{position: relative;height: 1px;width: 100%;background: #ededed;margin-bottom: 30px;}
@@ -31,7 +32,8 @@
 }
 .title .theme:before{position: absolute;left:-20px;content: '';width: 20px;height: 20px;background: #fafafa;}
 .title .theme:after{position: absolute;right:-20px;content: '';width: 20px;height: 20px;background: #fafafa;}
-.r-contac .glyphicon:before{position: relative;top: 2px;left: -2px;}
+.r-contac .glyphicon:before{position: relative;top: 3px;left: -2px;}
+.r-git .glyphicon:before{position: relative;top: 2px;}
 
 /*左侧通用*/
 .resume .r-left a{text-decoration: underline;color: #58aff6;margin: 0 5px;}
