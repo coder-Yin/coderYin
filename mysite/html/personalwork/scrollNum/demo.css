@@ -1,0 +1,45 @@
+@charset "utf-8";
+
+/*统计数字*/
+#statistics-num{height: 165px;background: #f7f7f7;padding-top: 30px;}
+.bgNum{position: relative;top: 10px;display: inline-block;width: 25px;height: 40px;background: url(nums.png);-webkit-transition: all 0.8s ease-in;
+-o-transition: all 0.8s ease-in;
+transition: all 0.8s ease-in;}
+.num-0{background-position: -11px -2px;}
+.num-1{background-position: -10px -51px;}
+.num-2{background-position: -10px -93px;}
+.num-3{background-position: -7px -138px;}
+.num-4{background-position: -7px -182px;}
+.num-5{background-position: -8px -227px;}
+.num-6{background-position: -7px -274px;}
+.num-7{background-position: -7px -320px;}
+.num-8{background-position: -7px -364px;}
+.num-9{background-position: -7px -409px;}
+
+.figure_title{
+	margin-bottom: 20px;
+	padding-right: 20px;
+	line-height: 1;
+	font-size:18px;
+	color: #333;
+}
+
+.number{
+	display: inline-block;
+	padding: 4px 0;
+	margin-right: 5px;
+	background-color: #f2f2f2;
+	border-radius: 4px;
+	vertical-align: bottom;
+}
+.number .figure_small_num{
+	display: inline-block;
+	width: 49px;
+	height: 60px;
+	/*padding-top: 12px;*/
+	text-align: center;
+	background: url(figure_small_bg.png) no-repeat;
+}
+.number .figure_small_num:last-child{
+	width: 48px;
+}

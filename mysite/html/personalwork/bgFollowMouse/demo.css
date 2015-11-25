@@ -1,0 +1,11 @@
+
+.da-thumbs img{width: 210px;}
+.da-thumbs {list-style: none;	position: relative;		padding: 0;}
+.da-thumbs li {	float: left;	background: #fff;	padding: 8px;	position: relative;}
+.da-thumbs li a,
+.da-thumbs li a img {	display: block;	position: relative; border:1px solid #f7f7f7;}
+.da-thumbs li a {	overflow: hidden;}
+.da-thumbs li a div {	position: absolute;	background: #345ca3;	background: rgba(53,93,162,0.8);	width: 210px;	height: 210px;	color: #fff;}
+.da-thumbs li a div h3 { padding:5px 0; margin: 0; border-bottom:3px solid rgba(255,255,255,0.5); font-size:16px;font-weight: 800;text-align: center;}
+.da-thumbs li a div h3 span { display:block; line-height:25px; height:25px; overflow:hidden;}
+.da-thumbs li a div p{padding-top: 5px;line-height: 2; overflow: hidden;}

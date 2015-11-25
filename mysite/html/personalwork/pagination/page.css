@@ -1,0 +1,21 @@
+/*·ÖÒ³ÑùÊ½*/
+.page{list-style: none;margin-bottom: 55px;}
+.page a,.page span{margin-right: 3px;font-size: 14px;width: 28px;height: 28px;display: inline-block;line-height:30px;color:#7f7f7f;text-decoration:none;text-align:center;vertical-align:middle;border: 1px #cdcdcd solid;}
+.page span{border: none;}
+.page a.prev,.page a.next{
+    -webkit-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+    -ms-transition: all .5s ease;
+    -o-transition: all .5s ease;
+    transition: all .5s ease;
+    border:none;
+}
+.page a.num:hover,.page a.cur{background: #ff85ad;border:1px solid #ff85ad;color: #fff;}
+.page a.prev{background-position: -405px -257px;width: 30px;height: 30px;cursor: not-allowed;}
+.page a.prev.active:hover{background-position: -446px -257px;}
+.page a.prev.active{cursor: pointer;}
+.page a.next{background-position: -446px -224px;width: 30px;height: 30px;cursor: not-allowed;}
+.page a.next.active{cursor: pointer;}
+.page a.next.active:hover{background-position: -405px -224px;}
+.page a:hover{text-decoration: none;}
+.baseIcon{background: url(icons.png);}

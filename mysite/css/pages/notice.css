@@ -1,0 +1,11 @@
+body { padding:0; margin:0; background:url(../../images/browser/noie-bg.png) center top repeat-x;}
+h2{font-family: microsoft yahei;  padding:10px; text-align:center;}
+a{color:#0BA0E9;:}
+.browser {  height:300px; width:700px; margin:0 auto; padding:0;}
+.browser li { float:left; display:inline; text-align:center; width:100px; padding:20px; text-align:center;}
+.browser li a {color:#999; text-decoration:none; margin-top:10px; display:inline-block;}
+
+.noie-logo { margin:68px auto 60px auto; display:block;}
+.user_leftb { position:relative; top:5px; margin-right:15px; display:inline-block; width:27px; height:27px; background:url(../../images/browser/noie-mag-icon.png) no-repeat;}
+.noie-title-img { display:block; width:518px; height:15px;  margin:95px auto 50px auto; background:url(../../images/browser/noie-title-img.png) no-repeat;}
+.lh-header{line-height: 50px;margin-top: 150px;}

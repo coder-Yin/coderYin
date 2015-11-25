@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>网站介绍</title>
+	<link href="../../css/base/bootstrap.min.css" rel="stylesheet">
+    <link href="../../css/base/common.css" rel="stylesheet">
+	<link href="../../css/plugin/jquery.fullPage.css" rel="stylesheet">
+	<link href="../../css/pages/fullpage/fullpage.css" rel="stylesheet">
+</head>
+<body>
+<div id="fullpage">
+	<div class="section" id="section0">
+		<div class="wrap">
+			<div class="text-center">
+				<div class="pr">
+					<div class="section0-text fadeInUp op0"><img src="../../images/fullpage/section0-plane.png" alt="这里是图片" class="section0-plane animatedPlane"></div>
+				</div>
+				<div class="mt50"><img src="../../images/fullpage/section0-main.png" alt="这里是图片" class="section0-main fadeInUp op0"></div>
+			</div>
+		</div>
+	</div>
+	<div class="section" id="section1">
+			<div class="text-center">
+				<img src="../../images/fullpage/section1-text.png" alt="这里是图片" class="section1-text fadeInUp op0">
+				<img src="../../images/fullpage/section1-text2.png" alt="这里是图片" class="section1-text2 op0 fadeInLeft">
+				<img src="../../images/fullpage/section1-text3.png" alt="这里是图片" class="section1-text3 fadeInUp op0">
+				<img src="../../images/fullpage/section1-text4.png" alt="这里是图片" class="section1-text4 op0 fadeInRight">
+			</div>
+	</div>
+	<div class="section" id="section2">
+		<div class="text-center">
+			<img src="../../images/fullpage/section2-text.png" alt="这里是图片" class="section2-text fadeInUp op0">
+			<div class="wrap">
+				<img src="../../images/fullpage/section2-main.png" alt="这里是图片" class="section2-main fadeInUp op0">
+				<img src="../../images/fullpage/section2-right.png" alt="这里是图片" class="section2-right floatingLeft op0">
+				<img src="../../images/fullpage/section2-left.png" alt="这里是图片" class="section2-left floatingRight op0">
+				<img src="../../images/fullpage/section2-shadow.png" alt="这里是图片" class="section2-shadow fadeInUp">
+			</div>
+		</div>
+	</div>
+	<div class="section" id="section3">
+		<div class="wrap-top">
+			<img src="../../images/fullpage/section3-text.png" alt="这里是图片" class="section3-text fadeInUp op0">
+			<img src="../../images/fullpage/section3-cloud.png" alt="这里是图片" class="section3-cloud floatingAround op0">
+		</div>
+		<div class="wrap-main">
+			<img src="../../images/fullpage/section3-circle.png" alt="这里是图片" class="section3-circle circleAround op0">
+			<img src="../../images/fullpage/section3-center-icon.png" alt="这里是图片" class="section3-center-icon fadeInUpLater op0">
+			<img src="../../images/fullpage/section3-shadow.png" alt="这里是图片" class="section3-shadow showView op0">
+			<img src="../../images/fullpage/section3-star.png" alt="这里是图片" class="section3-star1 fadeInUpStar shineStar op0">
+			<img src="../../images/fullpage/section3-star-dou.png" alt="这里是图片" class="section3-star2 fadeInUpStar shineStar op0">
+		</div>
+	</div>
+	<div class="section" id="section4">
+		<div class="text-center">
+			<img src="../../images/fullpage/section4-text.png" alt="这里是图片" class="section4-text showImmediate op0">
+		</div>
+		<div class="wrap-main">
+			<img src="../../images/fullpage/section4-circle.png" alt="这里是图片" class="section4-circle showImmediate op0">
+			<img src="../../images/fullpage/section4-person.png" alt="这里是图片" class="section4-person fadeInPerson op0">
+			<img src="../../images/fullpage/section4-icon1.png" alt="这里是图片" class="section4-icon-tr fadeInIconTR op0">
+			<img src="../../images/fullpage/section4-icon2.png" alt="这里是图片" class="section4-icon-tl fadeInIconTL op0">
+			<img src="../../images/fullpage/section4-icon3.png" alt="这里是图片" class="section4-icon-br fadeInIconBR op0">
+			<img src="../../images/fullpage/section4-icon4.png" alt="这里是图片" class="section4-icon-bl fadeInIconBL op0">
+			<img src="../../images/fullpage/section4-star.png" alt="这里是图片" class="section4-star1 op0 shineStar">
+			<img src="../../images/fullpage/section4-star.png" alt="这里是图片" class="section4-star2 op0 shineStar">
+			<img src="../../images/fullpage/section4-star.png" alt="这里是图片" class="section4-star3 op0 shineStar">
+		</div>
+		<div class="mt55 text-center">
+			<a href="../personalwork/medias.html" class="btn-bottom btn-job btnShake op0"></a><a href="../../../index.html" class="btn-bottom btn-partner btnShake op0"></a>
+		</div>
+		<div class="wrap-bt-pic">
+			<img src="../../images/fullpage/section4-bottom.png" alt="这里是图片">
+		</div>
+	</div>
+</div>
+	<script src="../../js/base/jquery.min.js"></script>
+	<script src="../../js/plugin/jquery.ui.js"></script>
+
+	<script type="text/javascript" src="../../js/plugin/jquery.fullPage.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$('#fullpage').fullpage({
+				sectionsColor: ['#51c0ff', '#fad75a', '#f1436f', '#d1eef6', '#a9d36b'],
+				anchors: ['firstPage', 'secondPage', '3rdPage', 'forthPage', 'fifthPage'],
+				menu: '#menu',
+				loopTop: true,
+				loopBottom: true,
+				'navigation': true,
+				'navigationPosition': 'right',
+				afterLoad: function(anchorLink, index){//index表示当前的页面，从1开始
+				},
+				onLeave: function(index, direction){
+				}
+			});
+
+		});
+	</script>
+</body>
+</html>

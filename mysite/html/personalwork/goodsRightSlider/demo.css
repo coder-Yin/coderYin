@@ -1,0 +1,17 @@
+/*正在热卖*/
+*{padding: 0;margin: 0;}
+.wid-wrap{width: 150px;}
+ul{list-style: none;}
+.baseIcon{display: inline-block;background: url(icons.png);}
+.tj-right{ width:140px;  overflow:hidden;padding-top: 15px;}
+.tj-right .title{ height:1px;border-bottom:1px solid #727171; text-align:center;margin-bottom: 5px;}
+.tj-right .title span{display: inline-block;background: #fff;position: relative;top:-5px;padding: 0 10px;}
+.tj-panel{ height:510px; overflow:hidden;}
+.tj-panel .tj-list{ height:425px; overflow:hidden; margin:15px 0;}
+/*.tj-panel li{ height:215px; }*/
+.tj-panel li .img{ width:140px; margin:0 auto 5px;}
+.tj-list li p{ margin-top:3px;}
+.tj-list li p a{ width:160px;white-space:nowrap; text-overflow:ellipsis;overflow:hidden; display:inline-block;}
+.tj-btn{text-align: center;}
+.tj-btn a.tj-prev-btn{ display:inline-block; width:55px; height:35px;background-position: -105px -110px;cursor: pointer;}
+.tj-btn a.tj-next-btn{position: relative;top: 4px; display:inline-block; width:55px; height:35px;background-position: -105px -145px;cursor: pointer;}

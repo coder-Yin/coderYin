@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>coderYin</title>
+    <link href="../../../css/base/bootstrap.min.css" rel="stylesheet">
+    <link href="../../../css/base/common.css" rel="stylesheet">
+    <link href="../../../css/pages/header.css" rel="stylesheet">
+    <link href="demo.css" rel="stylesheet">
+  </head>
+  <body>
+    <header class="navbar navbar-static-top bs-docs-nav" id="top" role="banner">
+      <div class="container">
+        <div class="navbar-header">
+          <button class="navbar-toggle collapsed js-navbar-collapse" type="button" data-toggle="collapse" data-target="#bs-navbar" aria-controls="bs-navbar" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a href="../../../../index.html" class="navbar-brand c-blue logo"><img src="../../../images/logo.png" alt="网站logo"></a>
+        </div>
+        <nav id="bs-navbar" class="navbar-collapse collapse" aria-expanded="false">
+          <ul class="nav navbar-nav">
+            <li>
+              <a href="../../../../index.html">首页</a>
+            </li>
+            <li>
+              <a href="../../resume/resume.html">简历</a>
+            </li>
+            <li>
+              <a href="#">作品</a>
+            </li>
+            <li>
+              <a href="../medias.html" class="active">组件</a>
+            </li>
+            <li>
+              <a href="#">博客</a>
+            </li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+          <li class="hidden-xs hidden-xs">
+            <span class="f12 top-middle">电脑上试着用手机访问看看呢，缩小浏览器也可以~~</span>
+          </li>
+           <li>
+              <a href="#">关于本站</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <section class="container-fluid trf-roateY-list total-wrap">
+        <div class="container">
+            <h2 class="title mb15">组件库</h2>
+            <div class="sub-title">
+              鼠标悬浮出现背面的内容
+              <a href="javascript:history.go(-1);" class="f-as go-back ml15">go back</a>
+            </div>
+        	<div class="w" id="apply-agent-info">
+                <div class="wc apply-agent-main">
+                    <div class="content c-666">
+                        <div class="tc user-info">
+                            <form action="" id="apply-agent-form" name="apply-agent-form">
+                                <div class="form-main">
+                                    <dl class="clearfix mt15">
+                                        <dt><span class="must">*</span>真实姓名：</dt>
+                                        <dd class="clearfix">
+                                            <input type="text" class="middle-input" name="real_name" id="real_name" value="">
+                                        </dd>
+                                    </dl>
+                                    <dl class="clearfix mt15">
+                                        <dt>邀请码：</dt>
+                                        <dd class="clearfix">
+                                            <input type="text" class="middle-input" name="invite_code" id="invite_code" value="">
+                                        </dd>
+                                    </dl>
+                                    <dl class="clearfix mt15">
+                                        <dt><span class="must">*</span>身份证号：</dt>
+                                        <dd class="clearfix">
+                                            <input type="text" class="middle-input" name="id_card" id="id_card" value="">
+                                        </dd>
+                                    </dl>
+                                    <dl class="clearfix mt15">
+                                        <dt>网店域名：</dt>
+                                        <dd class="clearfix">
+                                            <input type="text" class="long-input" name="web_site" id="web_site" value="">
+                                        </dd>
+                                    </dl>
+                                    <dl class="clearfix mt15">
+                                        <dt class="pr-5">固定电话：</dt>
+                                        <dd class="clearfix">
+                                            <input type="text" class="middle-input" name="tel" id="tel" value="">
+                                        </dd>
+                                    </dl>
+                                    <dl class="clearfix mt15">
+                                        <dt class="pr-5"><span class="must">*</span>QQ：</dt>
+                                        <dd class="clearfix">
+                                            <input type="text" class="middle-input" name="qq" id="qq" value="">
+                                        </dd>
+                                    </dl>
+                                    <dl class="clearfix mt15">
+                                        <dt class="pr-5">微信：</dt>
+                                        <dd class="clearfix">
+                                            <input type="text" class="middle-input" name="weixin" id="weixin" value="">
+                                        </dd>
+                                    </dl>
+                                    <dl class="clearfix mt15">
+                                        <dt class="pr-5">微博：</dt>
+                                        <dd class="clearfix">
+                                            <input type="text" class="middle-input" name="weibo" id="weibo" value="">
+                                        </dd>
+                                    </dl>
+                                    <dl class="clearfix mt15">
+                                        <dt class="pr-5">旺旺：</dt>
+                                        <dd class="clearfix">
+                                            <input type="text" class="middle-input" name="wangwang" id="wangwang" value="">
+                                        </dd>
+                                    </dl>
+                                    <dl class="clearfix mt15">
+                                        <dt class="pr-5">爱好：</dt>
+                                        <dd class="clearfix">
+                                            <input type="text" class="middle-input mr15" name="sign" id="sign" value=""><span class="c-999">英文逗号隔开，最多10个</span>
+                                        </dd>
+                                    </dl>
+                                    <dl class="clearfix mt35 mb75">
+                                        <dt>&nbsp;</dt>
+                                        <dd class="clearfix">
+                                            <button type="submit" class="btn-f06-big">立即提交</button><span id="show_error" class="dn"></span>
+                                        </dd>
+                                    </dl>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--end 表单-->
+        </div>
+    </section>
+    <script src="../../../js/pages/notice-back-four.js"></script>
+    <script src="jquery.js"></script>
+    <script src="../../../js/base/bootstrap.min.js"></script>
+    <script src="../../../js/pages/header.js"></script>
+    <script src="jquery-validate.min.js"></script><!--这个必须在jquery-form.js前面-->
+    <script src="jquery-form.js"></script>
+    <script src="demo.js"></script>
+</body>
+</html>

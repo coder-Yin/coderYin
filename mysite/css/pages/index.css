@@ -1,0 +1,93 @@
+@charset "utf-8";
+/**
+ * @author  yinxiaofei
+ * @date    2015-11-11
+ * @version V 1.0
+ * @email   yin_x_f@163.com
+ */
+
+.index-main{position: absolute;top: 50%;-webkit-transform: translateY(-50%);
+-ms-transform: translateY(-50%);
+-o-transform: translateY(-50%);
+transform: translateY(-50%);width: 100%;/*margin-top: -185px;*/}
+.index-main .title{
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 85px;
+    font-size: 70px\0;
+    color: #7da755;
+    line-height: 88px;
+    letter-spacing: .05px;
+    margin-bottom: 4px;
+}
+
+.index-main .sub-title {
+    font-weight: 100;
+    font-size: 21px;
+    color: #5f6060;
+    letter-spacing: 2px;
+}
+
+.index-main .container{margin-top: 100px;}
+
+.index-main .each-col{text-align: center;margin-bottom: 15px;}
+
+.index-main .each-col .img{
+	width: 125px;
+	height: 125px;
+    margin: 0 auto;
+}
+
+.index-main .each-col .desc{margin-top: 25px;}
+
+.index-main .each-col .desc a{
+	font-weight: 100;
+	font-size: 21px;
+	color: #5f6060;
+    letter-spacing: 2px;
+    text-decoration: none;
+}
+
+.user-photo{
+	border-radius: 50%;
+	-webkit-transition: all .8s ease-in;
+	-moz-transition: all .8s ease-in;
+	-ms-transition: all .8s ease-in;
+	-o-transition: all .8s ease-in;
+	transition: all .8s ease-in;
+}
+.user-photo:hover{
+	-webkit-transform: rotate(360deg);
+	-moz-transform: rotate(360deg);
+	-ms-transform: rotate(360deg);
+	-o-transform: rotate(360deg);
+	transform: rotate(360deg);
+}
+
+
+@media screen and (max-width: 768px){
+/*	.index-main{margin-top: -300px;}*/
+	.index-main .title{font-size: 28px;}
+	.index-main .sub-title{font-size: 18px;}
+	.index-main .container{margin-top: 50px;}
+	.index-main .each-col .img{
+		width: 80px;
+		height: 80px;
+	}
+	.index-main .each-col .desc a{font-size: 16px;}
+	.index-main{position: absolute;top: 80px;-webkit-transform: none;
+	-ms-transform: none;
+	-o-transform: none;
+	transform: none;
+	padding-bottom: 80px;
+	}
+}
+
+@media screen and (max-width: 640px){
+	.title{font-size: 20px;font-family: "microsoft yahei";}
+	.sub-title{font-size: 12px;font-family: "microsoft yahei";line-height: 25px;}
+}
+
+
+/*底部*/
+.footer{position: absolute;bottom: 20px;width: 100%;color: #5f6060;line-height: 25px;font-size: 12px;}

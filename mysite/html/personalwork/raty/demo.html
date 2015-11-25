@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>coderYin</title>
+    <link href="../../../css/base/bootstrap.min.css" rel="stylesheet">
+    <link href="../../../css/base/common.css" rel="stylesheet">
+    <link href="../../../css/pages/header.css" rel="stylesheet">
+    <link href="demo.css" rel="stylesheet">
+<body>
+	<header class="navbar navbar-static-top bs-docs-nav" id="top" role="banner">
+      <div class="container">
+        <div class="navbar-header">
+          <button class="navbar-toggle collapsed js-navbar-collapse" type="button" data-toggle="collapse" data-target="#bs-navbar" aria-controls="bs-navbar" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a href="../../../../index.html" class="navbar-brand c-blue logo"><img src="../../../images/logo.png" alt="网站logo"></a>
+        </div>
+        <nav id="bs-navbar" class="navbar-collapse collapse" aria-expanded="false">
+          <ul class="nav navbar-nav">
+            <li>
+              <a href="../../../../index.html">首页</a>
+            </li>
+            <li>
+              <a href="../../resume/resume.html">简历</a>
+            </li>
+            <li>
+              <a href="#">作品</a>
+            </li>
+            <li>
+              <a href="../medias.html" class="active">组件</a>
+            </li>
+            <li>
+              <a href="#">博客</a>
+            </li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+          <li class="hidden-xs hidden-xs">
+            <span class="f12 top-middle">电脑上试着用手机访问看看呢，缩小浏览器也可以~~</span>
+          </li>
+           <li>
+              <a href="#">关于本站</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <section class="container-fluid trf-roateY-list total-wrap">
+      <div class="container">
+        <h2 class="title mb15">组件库</h2>
+        <div class="sub-title">
+          动态评分，支持.5
+          <a href="javascript:history.go(-1);" class="f-as go-back ml15">go back</a>
+        </div>
+		<div class="row text-left mt30">
+			<div class="col-md-offset-2 col-md-8 pr0 com-eva-right">
+	            <form class="form-horizontal" id="#" name="#" novalidate="novalidate">
+	                <p>选择你对【<a href="#" class="c08f3">殷晓飞</a>】的第一印象：</p>
+	                <div class="mt15">
+	                    <ul class="tag_list pl0 mb5 clearfix">
+	                        <li ctype="tag" data-op="approve" title="靠谱" data-id="322" data-name="靠谱"> <a href="javascript:void(0);" class="active">靠谱</a></li>
+	                        <li ctype="tag" data-op="approve" title="有责任心" data-id="322" data-name="有责任心"> <a href="javascript:void(0);">有责任心</a></li>
+	                        <li ctype="tag" data-op="approve" title="喜欢钻研" data-id="322" data-name="喜欢钻研"> <a href="javascript:void(0);">喜欢钻研</a></li>
+	                        <li ctype="tag" data-op="approve" title="热爱前端" data-id="322" data-name="热爱前端"> <a href="javascript:void(0);">热爱前端</a></li>
+	                    </ul>
+	                    <p class="cf0">请选择第一印象的标签</p>
+	                </div>
+	                <div class="row mt30 inner">
+	                    <div class="col-md-4">
+	                        <div class="inner-left">
+	                            <div class="clearfix first-raty">
+	                                <span class="fl">网站风格：</span>
+	                                <div class="fl raty"></div>
+	                            </div>
+	                            <div class="clearfix mt10">
+	                                <span class="fl">是否有益：</span>
+	                                <div class="fl raty"></div>
+	                            </div>
+	                            <div class="clearfix mt10">
+	                                <span class="fl">愿意录取：</span>
+	                                <div class="fl raty"></div>
+	                            </div>
+	                        </div>
+	                        <p class="cf0 mt15">请给他打分~~</p> <!-- 如果要隐藏，则添加class dn -->
+	                    </div>
+	                    <!--end left-->
+	                    <div class="col-md-8 inner-right">
+	                        <div class="form-group form-group">
+	                                <label class="control-label">
+	                                    选择你与企业的关系：
+	                                </label>
+	                                <div class="col-sm-4">
+	                                    <select class="form-control input-sm">
+	                                      <option>合伙人</option>
+	                                      <option>2</option>
+	                                      <option>3</option>
+	                                      <option>4</option>
+	                                      <option>5</option>
+	                                    </select>
+	                                </div>
+	                        </div>
+	                        <textarea name="#" id="#" class="form-control pt10" rows="10" placeholder="非必填项，最多500字。"></textarea>
+	                        <button type="button" class="btn btn-primary btn-sm pl15 pr15 mt20">提交</button> <!-- type="submit" -->
+	                    </div>
+	                    <!--end right-->
+	                </div>
+	            </form>
+	            </div>
+		</div>
+	</div>
+	</section>
+  <script src="../../js/pages/notice-back-four.js"></script>
+	<script src="jquery.min.js"></script>
+  <script src="../../../js/base/bootstrap.min.js"></script>
+  <script src="../../../js/pages/header.js"></script>
+	<script src="jquery.raty.min.js"></script>
+	<script>
+		$(function(){
+            /*评价*/
+            $('div.raty').raty({
+                starOff: 'images/star-off.png',
+                starOn : 'images/star-on.png',
+                starHalf : 'images/star-half.png',
+                half: true,
+                number:5,
+                score: 4,
+                single:false
+            });
+         })
+	</script>
+</body>
+</html>

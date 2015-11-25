@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>coderYin</title>
+    <link href="../../../css/base/bootstrap.min.css" rel="stylesheet">
+    <link href="../../../css/base/common.css" rel="stylesheet">
+    <link href="../../../css/pages/header.css" rel="stylesheet">
+    <link href="demo.css" rel="stylesheet">
+
+  </head>
+  <body>
+    <header class="navbar navbar-static-top bs-docs-nav" id="top" role="banner">
+      <div class="container">
+        <div class="navbar-header">
+          <button class="navbar-toggle collapsed js-navbar-collapse" type="button" data-toggle="collapse" data-target="#bs-navbar" aria-controls="bs-navbar" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a href="../../../../index.html" class="navbar-brand c-blue logo"><img src="../../../images/logo.png" alt="网站logo"></a>
+        </div>
+        <nav id="bs-navbar" class="navbar-collapse collapse" aria-expanded="false">
+          <ul class="nav navbar-nav">
+            <li>
+              <a href="../../../../index.html">首页</a>
+            </li>
+            <li>
+              <a href="../../resume/resume.html">简历</a>
+            </li>
+            <li>
+              <a href="#">作品</a>
+            </li>
+            <li>
+              <a href="../medias.html" class="active">组件</a>
+            </li>
+            <li>
+              <a href="#">博客</a>
+            </li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+          <li class="hidden-xs hidden-xs">
+            <span class="f12 top-middle">电脑上试着用手机访问看看呢，缩小浏览器也可以~~</span>
+          </li>
+           <li>
+              <a href="#">关于本站</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <section class="container-fluid total-wrap">
+      <div class="container">
+        <h2 class="title mb15">组件库</h2>
+        <div class="sub-title">
+          鼠标悬浮出现背面的内容
+          <a href="javascript:history.go(-1);" class="f-as go-back ml15">go back</a>
+        </div>
+        <div class="wrapUl mt30">
+          <ul class="marqueeUl">
+            <li>abcdefg1</li>
+            <li>abcdefg2</li>
+            <li>abcdefg3</li>
+            <li>abcdefg4</li>
+            <li>abcdefg5</li>
+            <li>abcdefg6</li>
+            <li>abcdefg7</li>
+            <li>abcdefg8</li>
+            <li>abcdefg9</li>
+            <li>abcdefg10</li>
+          </ul>
+  	    </div>
+      </div>
+	</section>
+
+<script src="../../../js/pages/notice-back-four.js"></script>
+<script type="text/javascript" src="jquery.min.js"></script>
+<script src="../../../js/pages/header.js"></script>
+<script src="marquee.js"></script>
+<script>
+  $(function(){
+    $('.wrapUl').marquee({
+            auto: true,
+            interval: 1350,
+            showNum: 5,
+            stepLen: 1,
+            type: 'vertical'
+        });
+  });
+</script>
+
+ </body>
+ </html>

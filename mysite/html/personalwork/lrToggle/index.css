@@ -1,0 +1,83 @@
+@charset "UTF-8";
+
+
+/*自定义滚动条样式*/
+/*.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar{
+    background-color: #4779cf;border-radius: 0;
+}
+*/
+
+.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar{
+  background-color: #4779cf;
+  filter: "alpha(opacity=75)"; -ms-filter: "alpha(opacity=75)";
+}
+
+.mCSB_scrollTools .mCSB_dragger:hover .mCSB_dragger_bar{
+  background-color: #4779cf;
+  filter: "alpha(opacity=85)"; -ms-filter: "alpha(opacity=85)";
+}
+.mCSB_scrollTools .mCSB_dragger:active .mCSB_dragger_bar,
+.mCSB_scrollTools .mCSB_dragger.mCSB_dragger_onDrag .mCSB_dragger_bar{
+  background-color: #4779cf;
+  filter: "alpha(opacity=90)"; -ms-filter: "alpha(opacity=90)";
+}
+
+.border{border:1px solid #eeeeee;padding: 15px;}
+.cp-manager .mg-tit{border-left:5px solid #008ff3;padding-left: 10px;}
+.mg-photo img{width: 100px;}
+.weibo, .baidu{
+	background: url(bg.png) no-repeat;
+	display: inline-block;
+	width: 19px;
+	height:19px;
+	vertical-align: middle;
+	position: absolute;
+	top: 5px;
+}
+.weibo{background-position: -2px -64px;}
+.baidu{background-position: -27px -65px;}
+.ml30{margin-left: 30px;}
+.mg-content{max-height: 100px;}
+.mg-btn .btn-dt{background-color: #008ff3;color: #fff;}
+.mg-btn .btn-dt:hover{color: #fff;}
+.btn-endt{background-color: #f2c720;color: #fff;}
+.btn-endt:hover{background-color: #f2c720;color: #fff;}
+.count .red{color: #ff0000;}
+
+.mg-switch{
+	height: 1px;
+    border-bottom: 1px solid #e8e8e8;
+    position: relative;
+    margin: 45px auto 20px;
+}
+
+.mg-switch-wrap{
+  width: 100px;
+  height: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -10px;
+  margin-left: -50px;
+  background: #fff;
+}
+.switch-ico{
+  background: url(switch_leader.png) no-repeat;
+  width: 23px;
+  height: 23px;
+  position: absolute;
+  top: 110%;
+  cursor: pointer;
+  z-index: 99;
+}
+
+
+.mg-prev{ background-position: 0 -33px; left: 80px;}
+.mg-prev:hover{background-position: 0 0;}
+.mg-next{ background-position: -35px 0; right: 80px; }
+.mg-next:hover{background-position:-35px -33px;}
+
+.slick-slide img{display: inline-block;}
+.c999 {
+    color: #999;
+}

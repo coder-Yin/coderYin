@@ -1,0 +1,49 @@
+@charset "utf-8";
+/**
+ * @author  yinxiaofei
+ * @date    2015-11-16
+ * @version V 1.0
+ * @email   yin_x_f@163.com
+ */
+
+
+/*网站右侧导航悬浮*/
+#leftsead a{display:block;clear: both;}		
+#leftsead{position:fixed;top:20%;right:0px;z-index: 100; float:left; }
+#leftsead li div{float:right;}
+#leftsead li a .shows{display:block;}
+#leftsead li a .hides{margin-right:-180px;cursor:pointer;cursor:hand;}
+#leftsead li div {-webkit-transition:margin-right 0.5s ease; -moz-transition:margin-right 0.5s ease; -o-transition:margin-right 0.5s ease; }
+#leftsead li a{height: 45px;}
+.abbreviated{width:50px;height: 50px;background: url(web-float-cols.png);}
+.spread{width: 130px;height: 50px;background: url(web-float-show.png);}
+.icon-1{background-position:0 0}
+.icon-spread-1{background-position:0 0}
+.icon-2{background-position:0 -55px}
+.icon-spread-2{background-position:0 -55px}
+.icon-3{background-position:0 -110px}
+.icon-spread-3{background-position:0 -110px}
+.icon-4{background-position:0 -165px}
+.icon-spread-4{background-position:0 -165px}
+.icon-5{background-position:0 -217px}
+.icon-spread-5{background-position:0 -217px}
+.icon-6{background-position:0 -272px}
+.icon-spread-6{background-position:0 -272px}
+.icon-7{background-position:0 -326px}
+.icon-spread-7{background-position:0 -326px}
+.icon-8{background-position:0 -380px}
+.icon-spread-8{background-position:0 -380px}
+.icon-9{background-position:0 -434px}
+.icon-spread-9{background-position:0 -434px}
+.icon-10{background-position:0 -487px}
+.icon-spread-10{background-position:0 -487px}
+.icon-11{background-position:0 -542px}
+.icon-spread-11{background-position:0 -542px}
+.icon-12{background-position:0 -597px}
+.icon-spread-12{background-position:0 -597px}
+.icon-13{background-position:0 -652px}
+.icon-spread-13{background-position:0 -652px}
+#leftsead li a{margin-bottom: 8px;}
+#leftsead li#backTop{display: none;}
+#leftsead .ico{position: relative;background: #a163aa;border-radius:15px ; width: 23px; height: 23px; display: block;left: 10px;top: 12px;text-align: center;color: #fff; line-height: 23px; }
+#leftsead .job-compare{position: relative;}

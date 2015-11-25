@@ -1,0 +1,96 @@
+﻿<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>coderYin</title>
+    <link href="../../../css/base/bootstrap.min.css" rel="stylesheet">
+    <link href="../../../css/base/common.css" rel="stylesheet">
+    <link href="../../../css/pages/header.css" rel="stylesheet">
+    <link href="demo.css" rel="stylesheet">
+
+  </head>
+  <body>
+    <header class="navbar navbar-static-top bs-docs-nav" id="top" role="banner">
+      <div class="container">
+        <div class="navbar-header">
+          <button class="navbar-toggle collapsed js-navbar-collapse" type="button" data-toggle="collapse" data-target="#bs-navbar" aria-controls="bs-navbar" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a href="../../../../index.html" class="navbar-brand c-blue logo"><img src="../../../images/logo.png" alt="网站logo"></a>
+        </div>
+        <nav id="bs-navbar" class="navbar-collapse collapse" aria-expanded="false">
+          <ul class="nav navbar-nav">
+            <li>
+              <a href="../../../../index.html">首页</a>
+            </li>
+            <li>
+              <a href="../../resume/resume.html">简历</a>
+            </li>
+            <li>
+              <a href="#">作品</a>
+            </li>
+            <li>
+              <a href="../medias.html" class="active">组件</a>
+            </li>
+            <li>
+              <a href="#">博客</a>
+            </li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+          <li class="hidden-xs hidden-xs">
+            <span class="f12 top-middle">电脑上试着用手机访问看看呢，缩小浏览器也可以~~</span>
+          </li>
+           <li>
+              <a href="#">关于本站</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <section class="container-fluid trf-roateY-list total-wrap">
+      <div class="container">
+        <h2 class="title mb15">组件库</h2>
+        <div class="sub-title">
+          鼠标悬浮出现背面的内容
+          <a href="javascript:history.go(-1);" class="f-as go-back ml15">go back</a>
+        </div>
+		<div class="tb-booth tb-pic tb-s310 mt30">
+				<a href="images/01.jpg"><img src="images/01_mid.jpg" alt="美女" rel="images/01.jpg" class="jqzoom" /></a>
+		</div>
+		<div>
+			<ul class="tb-thumb" id="thumblist">
+				<li class="tb-selected"><a href="#"><img src="images/01_small.jpg" mid="images/01_mid.jpg" big="images/01.jpg"></a></li>
+				<li><a href="#"><img  src="images/02_small.jpg" mid="images/02_mid.jpg" big="images/02.jpg"></a></li>
+				<li><a href="#"><img src="images/03_small.jpg" mid="images/03_mid.jpg" big="images/03.jpg"></a></li>
+				<li><a href="#"><img src="images/04_small.jpg" mid="images/04_mid.jpg" big="images/04.jpg"></a></li>
+				<li><a href="#"><img src="images/05_small.jpg" mid="images/05_mid.jpg" big="images/05.jpg"></a></li>
+			</ul>
+		</div>
+	  </div>
+	</section>
+
+<script src="../../js/pages/notice-back-four.js"></script>
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/jquery.imagezoom.min.js"></script>
+<script src="../../../js/base/bootstrap.min.js"></script>
+<script src="../../../js/pages/header.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+
+	$(".jqzoom").imagezoom();
+	$("#thumblist li a").click(function(){
+		$(this).parents("li").addClass("tb-selected").siblings().removeClass("tb-selected");
+		$(".jqzoom").attr('src',$(this).find("img").attr("mid"));
+		$(".jqzoom").attr('rel',$(this).find("img").attr("big"));
+	});
+
+});
+</script>
+
+ </body>
+ </html>

@@ -1,0 +1,66 @@
+@charset "utf-8";
+/**
+ * @author  yinxiaofei
+ * @date    2015-11-12
+ * @version V 1.0
+ * @email   yin_x_f@163.com
+ */
+
+.pw-index-list{margin-bottom: 50px;}
+
+/*标题*/
+.pw-index-list .title{font-size: 26px;margin-bottom: 45px;}
+
+/*列表*/
+.pw-index-list .card{
+    position: relative;
+    min-height: 180px;
+    padding: 20px 15px;
+    border: 1px solid #E4E4E4;
+    opacity: 1;
+    filter: alpha(opacity=1);
+}
+.pw-index-list .theme{
+	text-transform: uppercase;
+    font-weight: 700;
+    font-size: 90px;
+    color: #7da755;
+    line-height: 88px;
+    letter-spacing: .05px;
+    margin-bottom: 4px;
+    -webkit-transition: font-size .2s;
+    -o-transition: font-size .2s;
+    transition: font-size .2s;
+}
+.pw-index-list .each-work{position: relative;padding-left: 0;margin-bottom: 15px;}
+.pw-index-list .desc{font-size: 18px;color: #35b558;}
+.pw-index-list .each-work:nth-of-type(2n) .desc,
+.pw-index-list .each-work:nth-of-type(2n) .theme{color: #58aff6;}
+.pw-index-list .wrap{position: absolute;top: 50%;left: 50%;-webkit-transform: translate(-50%,-50%);
+-ms-transform: translate(-50%,-50%);
+-o-transform: translate(-50%,-50%);
+transform: translate(-50%,-50%);}
+
+/*上下左右线条*/
+.each-work .line{
+    position: absolute;
+    display: inline-block;
+    background: #35b558;
+    opacity: 0;
+    filter: alpha(opacity=0);
+    -webkit-transition: all 1.2s;
+    -o-transition: all 1.2s;
+    transition: all 1.2s;
+}
+.pw-index-list .each-work:nth-of-type(2n) .line{background: #58aff6;}
+.top-line{top: 0;left:0;width: 0;height: 1px;}
+.right-line{bottom: 0;right:0;width: 1px;height: 0;}
+.bottom-line{bottom: 0;right:0;width: 0;height: 1px;}
+.left-line{top: 0;left:0;width: 1px;height: 0;}
+
+/*鼠标浮选线条出现*/
+.each-work .card:hover .theme{font-size: 110px;}
+.each-work .card:hover .top-line{width: 100%;opacity: 1;filter: alpha(opacity=100);}
+.each-work .card:hover .right-line{height: 100%;opacity: 1;filter: alpha(opacity=100);}
+.each-work .card:hover .bottom-line{width: 100%;opacity: 1;filter: alpha(opacity=100);}
+.each-work .card:hover .left-line{height: 100%;opacity: 1;filter: alpha(opacity=100);}

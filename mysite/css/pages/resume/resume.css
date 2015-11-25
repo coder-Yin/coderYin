@@ -1,0 +1,100 @@
+@charset "utf-8";
+/**
+ * @author  yinxiaofei
+ * @date    2015-11-17
+ * @version V 1.0
+ * @email   yin_x_f@163.com
+ */
+
+.resume .r-left{padding: 30px;margin-bottom: 100px;}
+.resume .r-left{color: #666;background: #fafafa;}
+.r-photo{width: 120px;height: 120px;border-radius: 50%;border: 5px solid #58aff6;margin-bottom: 8px;}
+.r-name{font-size: 28px;color: #333;margin-bottom: 8px;}
+.r-intention{font-size: 16px;color: #333;margin-bottom: 8px;}
+.r-school{margin-bottom: 8px;}
+
+.module{margin-top: 45px;}
+.title{position: relative;height: 1px;width: 100%;background: #ededed;margin-bottom: 30px;}
+.title .theme{
+	position: absolute;
+	left: 50%;
+	top: -16px;
+	margin-left: -60px;
+	display: inline-block;
+	font-size: 18px;
+    padding: 3px 24px;
+    text-align: center;
+    background-color: #eee;
+    -moz-border-radius: 26px;
+    -webkit-border-radius: 26px;
+    border-radius: 26px;
+}
+.title .theme:before{position: absolute;left:-20px;content: '';width: 20px;height: 20px;background: #fafafa;}
+.title .theme:after{position: absolute;right:-20px;content: '';width: 20px;height: 20px;background: #fafafa;}
+.r-contac .glyphicon:before{position: relative;top: 2px;left: -2px;}
+
+/*左侧通用*/
+.resume .r-left a{text-decoration: underline;color: #58aff6;margin: 0 5px;}
+.resume .r-left dl{margin-top: 10px;float: left;_display: inline;width: 50%;}
+.resume .r-left dt,.resume .r-left dd{float: left;line-height: 25px;}
+.resume .r-left dt{width: 95px;text-align: left;}
+
+/*教育经历*/
+.img-left{display: block;width: 46px;height: 46px;border: 2px solid #eee;}
+
+/*工作经历*/
+.experience li{margin-top: 25px;}
+.resume .r-left .experience dl{float: none;width: 100%;}
+.experience dt,.experience dd{float: left;text-align: left;}
+.experience dd{max-width: 700px;}
+.each-exp{border-bottom: 1px solid #eee;padding-bottom: 20px;margin-top: 20px;}
+.each-exp:last-child{border-bottom: none;}
+
+/*荣誉、技能*/
+.honor ul,.skill ul{list-style-type: disc;text-align: left;}
+.honor li,.skill li{margin-left: 30px;line-height: 30px;}
+
+
+/*右侧*/
+.resume .r-right{text-align: left;color: #666;padding-left: 30px;}
+
+.resume .r-right li{
+    height: 50px;
+    line-height: 50px;
+    border-left: 2px solid transparent;
+    margin-left: -1px;
+    border-left: 1px solid #e5e5e5;
+}
+.resume .r-right li.active {
+    border-color: #00b88d;
+    border-width: 2px;
+}
+
+.resume .r-right li.active a{
+    color: #00b88d;
+}
+
+.resume .r-right li a:hover{
+	background: #fafafa;
+}
+.resume .r-right li a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    color: #666;
+}
+
+.resume .r-right i{
+    margin: 0 24px 0 35px;
+    font-size: 16px;
+}
+
+@media screen and (max-width: 768px){
+	.resume .r-left dl{width: 100%;}
+	.total-wrap{top: 0;}
+	.edu,.work dd{width: 100%;margin: 5px 0;}
+	.honor li,.skill li{margin-left: 15px;}
+	.module{margin-bottom: 35px;}
+    .r-contac .glyphicon{display: block;margin-top: 10px;}
+    .r-contac .glyphicon:before{left: -5px;}
+}

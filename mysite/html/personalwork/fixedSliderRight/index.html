@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>coderYin</title>
+    <link href="../../../css/base/bootstrap.min.css" rel="stylesheet">
+    <link href="../../../css/base/common.css" rel="stylesheet">
+    <link href="../../../css/pages/header.css" rel="stylesheet">
+    <link href="demo.css" rel="stylesheet">
+
+  </head>
+  <body>
+    <header class="navbar navbar-static-top bs-docs-nav" id="top" role="banner">
+      <div class="container">
+        <div class="navbar-header">
+          <button class="navbar-toggle collapsed js-navbar-collapse" type="button" data-toggle="collapse" data-target="#bs-navbar" aria-controls="bs-navbar" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a href="../../../../index.html" class="navbar-brand c-blue logo"><img src="../../../images/logo.png" alt="网站logo"></a>
+        </div>
+        <nav id="bs-navbar" class="navbar-collapse collapse" aria-expanded="false">
+          <ul class="nav navbar-nav">
+            <li>
+              <a href="../../../../index.html">首页</a>
+            </li>
+            <li>
+              <a href="../../resume/resume.html">简历</a>
+            </li>
+            <li>
+              <a href="#">作品</a>
+            </li>
+            <li>
+              <a href="../medias.html" class="active">组件</a>
+            </li>
+            <li>
+              <a href="#">博客</a>
+            </li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+          <li class="hidden-xs hidden-xs">
+            <span class="f12 top-middle">电脑上试着用手机访问看看呢，缩小浏览器也可以~~</span>
+          </li>
+           <li>
+              <a href="#">关于本站</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <section class="container-fluid total-wrap mt20">
+      <div class="container">
+          <h2 class="title mb15">组件库</h2>
+          <div class="sub-title">
+            右侧固定，鼠标悬浮动画
+            <a href="javascript:history.go(-1);" class="f-as go-back ml15">go back</a>
+          </div>
+          <div id="leftsead">
+            <ul class="list-unstyled">
+                <li><a href="#">
+                    <div class="spread icon-spread-1 hides">
+                    </div>
+                    <div class="abbreviated icon-1 shows"></div>
+                    </a></li>
+                <li><a href="#">
+                    <div class="spread icon-spread-2 hides">
+                    </div>
+                    <div class="abbreviated icon-2 shows"></div>
+                    </a></li>
+                <li><a href="#">
+                    <div class="spread icon-spread-4 hides">
+                    </div>
+                    <div class="abbreviated icon-4 shows"></div>
+                    </a></li>
+                <li><a href="#">
+                    <div class="spread icon-spread-3 hides">
+                    </div>
+                    <div class="abbreviated icon-3 shows"></div>
+                    </a></li>
+                <li><a href="http://wpa.qq.com/msgrd?v=3&amp;uin=876214364&amp;site=qq&amp;menu=yes" class="qq" target="_blank">
+                    <div class="spread icon-spread-7 hides">
+                    </div>
+                    <div class="abbreviated icon-7 shows"></div>
+                    </a></li>
+                <li><a href="#">
+                    <div class="spread icon-spread-9 hides">
+                    </div>
+                    <div class="abbreviated icon-9 shows"></div>
+                    </a></li>
+                <li id="backTop" style="display: block;"><a href="#backTop">
+                    <div class="spread icon-spread-10 hides">
+                    </div>
+                    <div class="abbreviated icon-10 shows"></div>
+                    </a></li>
+            </ul>
+    </div>
+	    </div>
+	</section>
+
+<script src="../../../js/pages/notice-back-four.js"></script>
+<script type="text/javascript" src="jquery.min.js"></script>
+<script src="../../../js/pages/header.js"></script>
+<script>
+  $(function(){
+    $("#leftsead a").hover(function(){
+      $(this).children("div.hides").css("margin-right","0");
+      $(this).children("div.shows").css("margin-right","-200px");
+    },function(){
+      $(this).children("div.hides").css("margin-right","-200px");
+      $(this).children("div.shows").css("margin-right","0");
+    });
+    $('#backTop').click(function(){
+      $("html,body").animate({scrollTop:0},300);
+    });
+  });
+</script>
+
+ </body>
+ </html>

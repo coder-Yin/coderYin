@@ -1,0 +1,82 @@
+@charset "utf-8";
+/**
+ * @author  yinxiaofei
+ * @date    2015-11-13
+ * @version V 1.0
+ * @email   yin_x_f@163.com
+ */
+
+/*标题*/
+.trf-roateY-list .title{font-size: 26px;}
+
+/*列表*/
+.trf-roateY-list .card{position: relative;display: block;}
+
+/*列表——正面*/
+.trf-roateY-list .theme{
+	text-transform: uppercase;
+    font-weight: 700;
+    font-size: 90px;
+    color: #7da755;
+    line-height: 88px;
+    letter-spacing: .05px;
+    margin-bottom: 4px;
+}
+.trf-roateY-list .each-work{position: relative;float: left;width: 260px;height: 180px;overflow: hidden;margin: 20px 20px 0 0;padding: 0;
+    border: 1px solid #E4E4E4;}
+.trf-roateY-list .desc{font-size: 18px;color: #35b558;}
+.trf-roateY-list .each-work:nth-of-type(2n) .desc,
+.trf-roateY-list .each-work:nth-of-type(2n) .theme{color: #58aff6;}
+.trf-roateY-list .front{
+	-webkit-transform: rotateY(0deg);
+	-ms-transform: rotateY(0deg);
+	-o-transform: rotateY(0deg);
+	transform: rotateY(0deg);
+    background-color: #fff;
+    backface-visibility: hidden;
+    transition: .6s;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    padding: 20px 15px;
+}
+.trf-roateY-list .wrap{position: absolute;top: 50%;left: 50%;-webkit-transform: translate(-50%,-50%);
+-ms-transform: translate(-50%,-50%);
+-o-transform: translate(-50%,-50%);
+transform: translate(-50%,-50%);}
+
+/*列表反面*/
+.trf-roateY-list .intro{font-size: 14px;color: #35b558;line-height: 1.5;}
+.trf-roateY-list .btn{background-color: #35b558;}
+.trf-roateY-list .each-work:nth-of-type(2n) .intro{color: #58aff6;}
+.trf-roateY-list .each-work:nth-of-type(2n) .btn{background-color: #58aff6;}
+.trf-roateY-list .back{
+	-webkit-transform: rotateY(-180deg);
+	-ms-transform: rotateY(-180deg);
+	-o-transform: rotateY(-180deg);
+	transform: rotateY(-180deg);
+    background-color: #f5f5f5;
+    backface-visibility: hidden;
+    transition: .6s;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    min-height: 180px;
+    padding: 20px 15px;
+}
+
+/*悬浮动画*/
+.each-work:hover .front{
+	-webkit-transform:rotateY(180deg);
+	-moz-transform:rotateY(180deg);
+	-ms-transform:rotateY(180deg);
+	transform:rotateY(180deg);
+}
+.each-work:hover .back{
+	-webkit-transform:rotateY(0deg);
+	-moz-transform:rotateY(0deg);
+	-ms-transform:rotateY(0deg);
+	transform:rotateY(0deg);
+}

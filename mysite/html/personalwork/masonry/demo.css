@@ -1,0 +1,16 @@
+.box {
+  margin-bottom: 20px;
+  float: left;
+  width: 220px;
+}
+.box img {
+  max-width: 100%;
+  -webkit-transition: all .8s ease-out;
+  -o-transition: all .8s ease-out;
+  transition: all .8s ease-out;
+}
+
+.box img:hover{-webkit-transform: scale(1.1);
+-ms-transform: scale(1.1);
+-o-transform: scale(1.1);
+transform: scale(1.1);}
