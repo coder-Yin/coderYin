@@ -36,7 +36,7 @@ button.navbar-toggle.open{
 
 @media screen and (max-width: 768px){
 	#bs-navbar .navbar-nav li:first-child  a.active{color: #58aff6;}
-	.total-wrap{position: absolute;top: 80px;width: 100%;}
+	.total-wrap{position: absolute;top: 35px;width: 100%;}
 }
 
 .go-back{font-size: 18px;color: #58aff6;text-decoration: underline;letter-spacing: 1.5;

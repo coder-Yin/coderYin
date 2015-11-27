@@ -1,0 +1,58 @@
+@charset "utf-8";
+/**
+ * @author  yinxiaofei
+ * @date    2015-11-27
+ * @version V 1.0
+ * @email   yin_x_f@163.com
+ */
+
+.medias-phone{margin-bottom: 50px;}
+
+/*标题*/
+.medias-phone .title{font-size: 26px;margin-bottom: 45px;}
+
+/*列表*/
+.medias-phone .card{
+    position: relative;
+    min-height: 180px;
+    padding: 20px 15px;
+    border: 1px solid #E4E4E4;
+    opacity: 1;
+    filter: alpha(opacity=1);
+}
+.medias-phone .theme{
+	text-transform: uppercase;
+    font-weight: 700;
+    font-size: 90px;
+    color: #7da755;
+    line-height: 88px;
+    letter-spacing: .05px;
+    margin-bottom: 4px;
+    -webkit-transition: font-size .2s;
+    -o-transition: font-size .2s;
+    transition: font-size .2s;
+}
+.medias-phone .each-work{position: relative;padding-left: 0;margin-bottom: 15px;}
+.medias-phone .desc{font-size: 18px;color: #35b558;}
+.medias-phone .each-work:nth-of-type(2n) .desc,
+.medias-phone .each-work:nth-of-type(2n) .theme{color: #58aff6;}
+.medias-phone .wrap{position: absolute;top: 50%;left: 50%;-webkit-transform: translate(-50%,-50%);
+-ms-transform: translate(-50%,-50%);
+-o-transform: translate(-50%,-50%);
+transform: translate(-50%,-50%);}
+
+
+.wrap-ewm{position: absolute;top: 0;left: 0;opacity: 0;width: 100%;height: 100%;text-align: center;background: rgba(125,167,85,.1);border:1px solid #7da755;
+-webkit-transition: opacity .8s;
+-o-transition: opacity .8s;
+transition: opacity .8s;}
+.each-work:nth-of-type(2n) .wrap-ewm{border:1px solid #58aff6;background: rgba(88,175,246,.1);}
+.qr-code{max-width: 135px;max-height: 135px;}
+.wrap-ewm .placeholder{display: inline-block;height: 100%;width: 0;vertical-align: middle;}
+
+.each-work:hover .wrap-ewm{opacity: 1;}
+
+@media screen and (max-width: 768px) {
+    .wrap-ewm{opacity: 1;}
+    .card{opacity: 0;}
+}

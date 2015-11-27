@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>coderYin</title>
+	<link href="../../../css/base/bootstrap.min.css" rel="stylesheet">
+    <link href="../../../css/base/common.css" rel="stylesheet">
+    <link href="../../../css/pages/header.css" rel="stylesheet">
+	<link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+	<header class="navbar navbar-static-top bs-docs-nav" id="top" role="banner">
+      <div class="container">
+        <div class="navbar-header">
+          <button class="navbar-toggle collapsed js-navbar-collapse" type="button" data-toggle="collapse" data-target="#bs-navbar" aria-controls="bs-navbar" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a href="../../../../index.html" class="navbar-brand c-blue logo"><img src="../../../images/logo.png" alt="网站logo"></a>
+        </div>
+        <nav id="bs-navbar" class="navbar-collapse collapse" aria-expanded="false">
+          <ul class="nav navbar-nav">
+            <li>
+              <a href="../../../../index.html">首页</a>
+            </li>
+            <li>
+              <a href="../../resume/resume.html">简历</a>
+            </li>
+            <li>
+              <a href="#">作品</a>
+            </li>
+            <li class="focus">
+              <a href="../medias.html" class="active">组件</a>
+            </li>
+            <li>
+              <a href="#">博客</a>
+            </li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+           <li class="hidden-xs hidden-xs">
+            <span class="f12 top-middle mr15">试着用手机访问看看呢，缩小浏览器也可以~~</span>
+           </li>
+           <li>
+              <a href="#">关于本站</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <section class="container-fluid medias-phone text-center total-wrap">
+      <div class="container">
+        <h2 class="title mb15">组件库</h2>
+        <div class="sub-title">
+          非首屏图片延迟加载，当滚动条到该图片位置时，图片才出现，可以查看network。
+          <a href="javascript:history.go(-1);" class="f-as go-back ml15">go back</a>
+        </div>
+		<div class="img-l-wrap mt30">
+			<ul class="clearfix img-lazyload">
+				<li><img src="images/test.png" alt="" data-original="images/test1.jpg"></li>
+				<li><img src="images/test.png" alt="" data-original="images/test2.jpg"></li>
+				<li><img src="images/test.png" alt="" data-original="images/test3.jpg"></li>
+				<li><img src="images/test.png" alt="" data-original="images/test4.jpg"></li>
+				<li><img src="images/test.png" alt="" data-original="images/test5.jpg"></li>
+				<li><img src="images/test.png" alt="" data-original="images/test6.jpg"></li>
+				<li><img src="images/test.png" alt="" data-original="images/test7.jpg"></li>
+				<li><img src="images/test.png" alt="" data-original="images/test8.jpg"></li>
+				<li><img src="images/test.png" alt="" data-original="images/test9.jpg"></li>
+				<li><img src="images/test.png" alt="" data-original="images/test10.jpg"></li>
+			</ul>
+		</div>
+	  </div>
+	</section>
+	<script src="js/zepto.min.js"></script>
+  <script src="../../../js/pages/notice-back-four.js"></script>
+	<script src="js/zepto.picLazyLoad.min.js"></script>
+	<script>
+		// 图片懒加载
+		$('.img-lazyload img').picLazyLoad({
+		    threshold: 0,
+		    placeholder: 'images/test.png'
+		});
+	</script>
+</body>
+</html>
