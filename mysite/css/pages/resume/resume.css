@@ -52,6 +52,9 @@
 .each-exp{border-bottom: 1px solid #eee;padding-bottom: 20px;margin-top: 20px;}
 .each-exp:last-child{border-bottom: none;}
 
+/*标签*/
+.tags li{float: left;*display: inline;margin-right: 10px;margin-bottom: 10px;line-height: 25px;border-radius: 15px;padding: 0 15px;border: 1px solid #58aff6;font-size: 12px;}
+
 /*荣誉、技能*/
 .honor ul,.skill ul{list-style-type: disc;text-align: left;}
 .honor li,.skill li{margin-left: 30px;line-height: 30px;}

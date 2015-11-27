@@ -7,7 +7,7 @@
  */
 .clearfix:after{content: "";display: block;visibility: hidden;clear: both;height: 0;}
 .clearfix{*+height:1%;}
-.img-l-wrap{width: 445px;margin: 30px auto;}
+.img-l-wrap{max-width: 445px;margin: 30px auto;}
 .img-l-wrap ul{
 	list-style: none;
 	padding: 0;margin: 0;
@@ -26,4 +26,8 @@
 }
 .img-l-wrap ul li img{
 	width: 100%;
+}
+
+@media screen and (max-width: 768px) {
+	.img-l-wrap ul li{width: 50%;margin-right: 0;}
 }

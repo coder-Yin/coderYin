@@ -53,6 +53,6 @@ transition: opacity .8s;}
 .each-work:hover .wrap-ewm{opacity: 1;}
 
 @media screen and (max-width: 768px) {
-    .wrap-ewm{opacity: 1;}
-    .card{opacity: 0;}
+    .wrap-ewm{display: none;}
+    .each-work:hover .wrap-ewm{display: none;}
 }
