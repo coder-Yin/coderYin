@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <title>04-持仓-我的持仓---资产概要仓</title>
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport" />
+    <meta content="telephone=no" name="format-detection" />
+    <link rel="stylesheet" href="assets/css/common.css" />
+    <style>
+        .chart_pie_warp{width: 100%;background: #fff;}
+        #chart_pie{width: 230px;height: 230px;margin: 0 auto;}
+        .chart_line_wrap{margin-bottom: 20px;}
+        .chart_line_wrap .highcharts-legend-item{display: none;}
+        .chart_tool_label{padding: 0 5px;line-height: 22px;}
+    </style>
+
+</head>
+
+<body>
+    <header class=" loan-title">
+    	
+        <div class="back" id="page_rturn" onclick='history.back("-1");'>返回</div>
+        <span class='title-name'>虚拟盘</span>
+</header>
+    
+    <div class="set_content">
+        <div class="sel_top">
+        	
+        	<span class="set_center">我的持仓</span>
+            <div class="give_up">返回</div>
+            
+            
+        </div>
+       <div class="chart_pie_warp"><div id="chart_pie"></div></div>
+      	<ul class="pic1_list">
+        		<li>
+                	<div class="col_f60"></div>
+                    <div class="col_r"> <span class="pic_tt">现金类产品</span> 25,123.00</div>
+                    <div class="clear"></div>
+                </li>
+                <li>
+                	<div class="col_f98"></div>
+                    <div class="col_r"> <span class="pic_tt">现金类产品</span> 25.00</div>
+                     <div class="clear"></div>
+                </li>
+                <li>
+                	<div class="col_fc1"></div>
+                    <div class="col_r"> <span class="pic_tt">现金类产品</span> 2,123.00</div>
+                     <div class="clear"></div>
+                </li>
+                <li>
+                	<div class="col_feb"></div>
+                    <div class="col_r"> <span class="pic_tt">现金类产品</span> 251.00</div>
+                     <div class="clear"></div>
+                </li>
+                <li>
+                	<div class="col_219"></div>
+                    <div class="col_r"> <span class="pic_tt">现金类产品</span> 225,123.00</div>
+                     <div class="clear"></div>
+                </li>
+        </ul>
+        <div class="intr_tt1 ">— 持仓走势 —</div>
+        
+        <div class="chart_line_wrap">
+         <div id="chart_line"></div>
+        </div>
+</div>
+<script src="assets/js/standalone-framework.js"></script>
+<script src="assets/js/highcharts.js"></script>
+<script>
+
+    //饼状图
+    var chartPie = new Highcharts.Chart({
+        credits: {
+          enabled:false
+        },
+        chart: {
+            renderTo: 'chart_pie',
+            height: 230,
+            width: 230,
+        },
+        title:{
+          text:"<p style='text-align:center;color:#969696;'>虚拟资产</p><p style='text-align:center;color:#353535;'>234,345.56</p>",
+          verticalAlign:"middle",
+          y: -12,
+          useHTML: true
+        },
+        tooltip: {
+            enabled: false
+        },
+        plotOptions: {
+            pie: {
+                innerSize:'125',
+                colors: [
+                       '#fe5722',
+                       '#ff9801',
+                       '#fec107',
+                       '#ffeb3c',
+                       '#2196f3'
+                    ]
+            },
+            series: {
+                stickyTracking: false,
+                dataLabels: {
+                    enabled: false, //关闭数据提示
+                },
+                events: {
+                    click: function(event) {
+                        alert(this.name +' clicked\n'+'highcharts 交流群294191384');
+                    }
+                }
+
+            }
+
+        },
+        series: [{
+            type: 'pie',
+            name: 'Browser share',
+            data: [
+                ['现金类',   15.0],
+                ['IE',       26.8],
+                ['Chrome',       26.8],
+                ['Safari',    8.5],
+                ['Opera',     6.2]
+            ]
+        }]
+      });
+
+    //折线图
+    var chartLine = new Highcharts.Chart({
+        credits: {
+          enabled:false
+        },
+        chart: {
+            renderTo: 'chart_line',
+            marginRight: 20,
+            marginLeft: 20,
+            height:250,
+            zoomType:'xy'
+        },
+        title:{
+          text:""
+        },
+        xAxis: {
+            categories: ['2015-10-26','2015-10-27','2015-10-28','2015-10-29', '2015-10-30', '2015-10-31','2015-11-21'],
+            labels: {  //X轴的标签（下面的说明）
+                align: "center",              //位置
+                step: 2,                      //标签的相隔显示的步长
+            },
+            title:{
+                text:''
+            }
+        },
+        yAxis: {
+            labels: {
+                enabled: false
+            },
+            title:{
+                text:''
+            },
+            tickPixelInterval: 60
+        },
+        tooltip: {
+            backgroundColor: '#000',   // 背景颜色
+            borderColor: 'black',         // 边框颜色
+            borderRadius: 10,             // 边框圆角
+            borderWidth: 3,               // 边框宽度
+            style: {                      // 文字内容相关样式
+                color: "#fff",
+                fontSize: "14px",
+                fontWeight: "800",
+                fontFamily: "Courir new"
+            },
+            snap: 0,
+            shared: true,
+            useHTML: true,
+            headerFormat: '<p style="margin-left:5px;">{point.key}</p>',
+            pointFormat: '<div class="chart_tool_label"><p>虚拟资产</p><p style="color:#bf7748;font-size:16px;">{point.y}</p></div>',
+            valueDecimals: 1
+        },
+        plotOptions: {
+            series: {
+                marker: {
+                    enabled: true, //关闭数据提示
+                },
+                stickyTracking: false,
+
+                // events: {
+                //     click: function(event) {
+                //         alert(this.name +' clicked\n'+'highcharts 交流群294191384');
+                //     }
+                // }
+            }
+        },
+        series: [{
+            data: [21,8,18,8,22,26,25],
+            color:"#eb5455"
+        }]
+      })
+</script>
+</body>
+
+</html>

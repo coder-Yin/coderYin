@@ -48,12 +48,36 @@
 .experience li{margin-top: 25px;}
 .resume .r-left .experience dl{float: none;width: 100%;}
 .experience dt,.experience dd{float: left;text-align: left;}
-.experience dd{max-width: 700px;}
+.experience dd{max-width: 700px;margin-bottom: 10px;}
 .each-exp{border-bottom: 1px solid #eee;padding-bottom: 20px;margin-top: 20px;}
 .each-exp:last-child{border-bottom: none;}
+.experience .line{
+	margin-bottom: 10px;
+}
 
 /*标签*/
-.tags li{float: left;*display: inline;margin-right: 10px;margin-bottom: 10px;line-height: 25px;border-radius: 15px;padding: 0 15px;border: 1px solid #58aff6;font-size: 12px;}
+.resume .r-left .dl-resume{
+    float: none;
+    width: 100%;
+}
+
+.resume .r-left .dl-resume dt{
+    display: block;
+    width: auto;
+    margin-bottom: 10px;
+    margin-right: 15px;
+}
+
+.ul-tags li{
+    float: left;*display: inline;margin-right: 10px;margin-bottom: 10px;line-height: 25px;border-radius: 15px;padding: 0 15px;border: 1px solid #58aff6;font-size: 12px;
+}
+
+.ul-tags li.no{
+	border: none;
+}
+
+.resume-left.media-left .text{position: relative;top: 2px;width: 50px;font-weight: 600;}
+
 
 /*荣誉、技能*/
 .honor ul,.skill ul{list-style-type: disc;text-align: left;}
@@ -94,12 +118,43 @@
     font-size: 16px;
 }
 
+.resume .r-left a.a-normal{text-decoration: none;color: #666;}
+
+.ul-tags li.no{
+	margin-left: -10px;
+	display: block;
+	float: none;
+	text-align: left;
+}
+
 @media screen and (max-width: 768px){
 	.resume .r-left dl{width: 100%;}
+    .resume .r-left .dl-resume dt{float: none;}
 	.total-wrap{top: 0;}
 	.edu,.work dd{width: 100%;margin: 5px 0;}
 	.honor li,.skill li{margin-left: 15px;}
 	.module{margin-bottom: 35px;}
     .r-contac .glyphicon{display: block;margin-top: 10px;}
     .r-contac .glyphicon:before{left: -5px;}
+		.container-fluid,.container{padding: 0;}
+		.ul-tags li{text-align: left;}
+		.ul-tags li.no{
+			margin-left: -10px;
+		}
+
+		.resume .r-left{
+			margin-bottom: 0;
+		}
+
+		.total-wrap{
+			margin-top: 50px;
+		}
+
+	.navbar .container{
+		padding: 0 15px;
+	}
+}
+
+.stress{
+	font-weight: bold;
 }

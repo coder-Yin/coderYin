@@ -7,7 +7,7 @@ $(function(){
 
 	//右侧导航的点击事件
 	$(".js-r-position li a").click(function(){
-		$offsetTop=$(this).attr("data-pos");
+		$offsetTop=$(this).attr("data-pos") - 20;
 		$("body,html").animate({"scrollTop":$offsetTop+"px"},500);
 	});
 
